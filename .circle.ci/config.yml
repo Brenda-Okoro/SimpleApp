@@ -7,6 +7,11 @@ general:
   branches:
     only:
      - /master.*/
+     
+     dependencies:
+  override:
+    - chmod +x gradlew
+    - ./gradlew dependencies
 jobs:
   build:
     docker:
