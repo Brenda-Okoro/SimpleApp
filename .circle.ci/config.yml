@@ -32,9 +32,8 @@ jobs:
           - v1-dependencies-
 
       - run: gradle dependencies
-      name: chmod permissions
-      command: chmod +x ./gradlewname: chmod permissions
-      command: chmod +x ./gradlew
+      name: Run Tests
+          command: ./gradlew lint test
 
       - save_cache:
           paths:
