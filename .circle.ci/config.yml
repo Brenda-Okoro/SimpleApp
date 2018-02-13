@@ -12,6 +12,11 @@ general:
   override:
     - chmod +x gradlew
     - ./gradlew dependencies
+    
+    test:
+  override:
+    - chmod +x grailsw
+    - ./grailsw simple-app --non-interactive
 jobs:
   build:
     docker:
